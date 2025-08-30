@@ -20,7 +20,7 @@ assistantids = []
 class Bot(Client):
     def __init__(self):
         super().__init__(
-            "Aditya_Server",
+            "II_RAJPUT_SHIV_OP_II",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             bot_token=console.BOT_TOKEN,
@@ -66,35 +66,35 @@ class Bot(Client):
 class App(Client):
     def __init__(self):
         self.one = Client(
-            "Aditya_Halder_1",
+            "II_RAJPUT_SHIV_OP_II_1",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             session_string=str(console.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            "Aditya_Halder_2",
+            "II_RAJPUT_SHIV_OP_II_2",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             session_string=str(console.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            "Aditya_Halder_3",
+            "II_RAJPUT_SHIV_OP_II_3",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             session_string=str(console.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            "Aditya_Halder_4",
+            "II_RAJPUT_SHIV_OP_II_4",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             session_string=str(console.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            "Aditya_Halder_5",
+            "II_RAJPUT_SHIV_OP_II_5",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             session_string=str(console.STRING5),
@@ -107,8 +107,8 @@ class App(Client):
         if console.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("AdityaServer")
-                await self.one.join_chat("AdityaDiscus")
+                await self.one.join_chat("Team_Dns_Network")
+                await self.one.join_chat("Team_Dns_Network")
             except:
                 pass
             assistants.append(1)
@@ -138,8 +138,8 @@ class App(Client):
         if console.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("AdityaServer")
-                await self.two.join_chat("AdityaDiscus")
+                await self.two.join_chat("Team_Dns_Network")
+                await self.two.join_chat("Team_Dns_Network")
             except:
                 pass
             assistants.append(2)
@@ -169,8 +169,8 @@ class App(Client):
         if console.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("AdityaServer")
-                await self.three.join_chat("AdityaDiscus")
+                await self.three.join_chat("Team_Dns_Network")
+                await self.three.join_chat("Team_Dns_Network")
             except:
                 pass
             assistants.append(3)
@@ -200,8 +200,8 @@ class App(Client):
         if console.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("AdityaServer")
-                await self.four.join_chat("AdityaDiscus")
+                await self.four.join_chat("Team_Dns_Network")
+                await self.four.join_chat("Team_Dns_Network")
             except:
                 pass
             assistants.append(4)
@@ -231,8 +231,8 @@ class App(Client):
         if console.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("AdityaServer")
-                await self.five.join_chat("AdityaDiscus")
+                await self.five.join_chat("Team_Dns_Network")
+                await self.five.join_chat("Team_Dns_Network")
             except:
                 pass
             assistants.append(5)
@@ -265,50 +265,50 @@ class App(Client):
 
 class Call(PyTgCalls):
     def __init__(self):
-        self.adityaplayer1 = Client(
-            "Aditya_Player_1",
+        self.ShivMusic1 = Client(
+            "Shiv_Music_1",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             session_string=str(console.STRING1),
         )
         self.one = PyTgCalls(
-            self.adityaplayer1, cache_duration=100
+            self.ShivMusic1, cache_duration=100
         )
-        self.adityaplayer2 = Client(
-            "Aditya_Player_2",
+        self.ShivMusic2 = Client(
+            "Shiv_Music_2",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             session_string=str(console.STRING2),
         )
         self.two = PyTgCalls(
-            self.adityaplayer2, cache_duration=100
+            self.ShivMusic2, cache_duration=100
         )
-        self.adityaplayer3 = Client(
-            "Aditya_Player_3",
+        self.ShivMusic3 = Client(
+            "Shiv_Music_3",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             session_string=str(console.STRING3),
         )
         self.three = PyTgCalls(
-            self.adityaplayer3, cache_duration=100
+            self.ShivMusic3, cache_duration=100
         )
-        self.adityaplayer4 = Client(
-            "Aditya_Player_4",
+        self.ShivMusic4 = Client(
+            "Shiv_Music_4",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             session_string=str(console.STRING4),
         )
         self.four = PyTgCalls(
-            self.adityaplayer4, cache_duration=100
+            self.ShivMusic4, cache_duration=100
         )
-        self.adityaplayer5 = Client(
-            "Aditya_Player_5",
+        self.ShivMusic5 = Client(
+            "Shiv_Music_5",
             api_id=console.API_ID,
             api_hash=console.API_HASH,
             session_string=str(console.STRING5),
         )
         self.five = PyTgCalls(
-            self.adityaplayer5, cache_duration=100
+            self.ShivMusic5, cache_duration=100
         )
         
     call_config = GroupCallConfig(auto_start=False)
