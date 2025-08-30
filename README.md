@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://t.me/Team_Dns_Network"><img src="https://graph.org/file/918101d0ad6b1207e6201.png" height="270" width="480" alt="ShivMusic"/></a>
+<a href="https://t.me/Team_Dns_Network"><img src="https://files.catbox.moe/3hwjgi.jpg" height="270" width="480" alt="Shiv Music"/></a>
 </p>
 
 <p align="center">
@@ -63,7 +63,3 @@ ShivMusic is an advanced, powerful & multi-featured Telegram vc streaming bot.
 - Telegram Support: [**`@Dns_support_group`**](https://t.me/dns_support_group)
 
 <h2>📑 Acknowledgement / Credits</h2>
-
-- [**`Pyrogram:`**](https://github.com/pyrogram) All functions of ShivMusic based on this mtproto client library.
-- [**`Py-TgCalls:`**](https://github.com/py-tgcalls) Telegram Streaming system of ShivMusic based on this library.
-- [**`Aditya-Player:`**](https://github.com/AdityaHalder/vcbot) Special thanks to [**`Aditya Halder`**](https://github.com/AdityaHalder) for creating [**`Aditya-Player`**](https://github.com/AdityaHalder/vcbot)
