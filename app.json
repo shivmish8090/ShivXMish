@@ -3,7 +3,7 @@
   "description": "A Telegram bot/music player powered by Python and Pyrogram.",
   "repository": "https://github.com/shivmish8090/ShivXMish",
   "keywords": ["telegram", "bot", "music", "python", "pyrogram"],
-  "stack": "heroku-22",
+  "stack": "container",
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID",
@@ -39,6 +39,14 @@
       "value": "https://graph.org/file/918101d0ad6b1207e6201.png"
     }
   },
+  "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
   "formation": {
     "worker": {
       "quantity": 1,
