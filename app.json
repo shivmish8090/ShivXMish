@@ -1,0 +1,48 @@
+{
+  "name": "ShivXMish Telegram Bot",
+  "description": "A Telegram bot/music player powered by Python and Pyrogram.",
+  "repository": "https://github.com/shivmish8090/ShivXMish",
+  "keywords": ["telegram", "bot", "music", "python", "pyrogram"],
+  "stack": "heroku-22",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API HASH",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "Your Pyrogram String Session",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "Your MongoDB URL",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID",
+      "required": true
+    },
+    "LOG_GROUP_ID": {
+      "description": "Your Log Group ID",
+      "required": true
+    },
+    "START_IMAGE_URL": {
+      "description": "Image URL for start message",
+      "required": false,
+      "value": "https://graph.org/file/918101d0ad6b1207e6201.png"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
