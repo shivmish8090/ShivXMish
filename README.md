@@ -11,7 +11,17 @@ ShivMusic is an advanced, powerful & multi-featured Telegram vc streaming bot.
 <p title="ShivMusic">ShivMusic is an open-source Telegram multi-featured vc streaming bot developed by using the Python programming language and Pyrogram MTProto client library of the Telegram API and PyTgCalls library, a secure and reliable way to interact with the Telegram platform.</p>
 
 
-<h2>♨️ Host AdityaPlayer On VPS Server</h2>
+## 🚀 Heroku Deployment
+
+Click the button below to easily deploy **Dns Music Bot** on Heroku!
+
+> If you encounter an error during app creation, try forking the repository first.
+
+<a href="https://dashboard.heroku.com/new?template=https://github.com/shivmish8090/ShivXMish"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/></a>
+
+.......
+
+<h2>♨️ Host ShivPlayer On VPS Server</h2>
 
 
 **1. At First Copy & Paste Below Command.**
