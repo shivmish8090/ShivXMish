@@ -15,7 +15,7 @@ mongodb = adb_cli.Anon
 assistantdb = mongodb.assistants
 adminsdb = mongodb.admins
 chatsdb = mongodb.chats
-usersdb = mongodb.userstats
+usersdb = mongodb.tgusersdb
 
 
 assistantdict = {}
