@@ -69,7 +69,7 @@ async def sudo_users():
     if OWNER_ID != 0:
         if OWNER_ID not in sudoers:
             sudoers.add(OWNER_ID)
-    sudoersdb = adb.sudoers
+    sudoersdb = mongodb.sudoers
     sudousers = await sudoersdb.find_one({"sudo": "sudo"})
     sudousers = [] if not sudousers else sudousers["sudoers"]
     if OWNER_ID != 0:
