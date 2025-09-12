@@ -64,7 +64,7 @@ START_IMAGE_URL = getenv("START_IMAGE_URL", "https://graph.org/file/918101d0ad6b
 
 
 async def sudo_users():
-    from .modules.database import adb
+    from .modules.database import mongodb
     global sudoers
     if OWNER_ID != 0:
         if OWNER_ID not in sudoers:
