@@ -6,16 +6,16 @@ from motor.motor_asyncio import AsyncIOMotorClient
 try:
     adb_cli = AsyncIOMotorClient(console.MONGO_URL)
 except:
-    logs(__name__).info("⚠️ 'MONGO_URL' - is not valid❗")
+    logs(name).info("⚠️ 'MONGO_URL' - is not valid❗️")
     sys.exit()
 
-adb = adb_cli.AdityaPlayer
+mongodb = adb_cli.Anon
     
 
-assistantdb = adb.assistants
-adminsdb = adb.admins
-chatsdb = adb.tgchats
-usersdb = adb.tgusers
+assistantdb = mongodb.assistants
+adminsdb = mongodb.admins
+chatsdb = mongodb.chats
+usersdb = mongodb.userstats
 
 
 assistantdict = {}
