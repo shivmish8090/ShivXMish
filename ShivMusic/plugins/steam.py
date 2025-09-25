@@ -154,7 +154,7 @@ async def start_stream_in_vc(client, message):
                 await asyncio.sleep(0.5)
         
         file_path = file_name
-        title = full_title[:25]
+        title = full_title[:15]
         duration_mins = format_duration(duration_sec)
         views = "None"
         image_path = console.START_IMAGE_URL
@@ -195,7 +195,7 @@ async def start_stream_in_vc(client, message):
 
         video = result[0]
         full_title = video["title"]
-        title = full_title[:25]
+        title = full_title[:15]
         id = video["id"]
         duration = video["duration"]
         if not duration:
