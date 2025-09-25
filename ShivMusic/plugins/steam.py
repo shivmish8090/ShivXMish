@@ -321,12 +321,12 @@ async def start_stream_in_vc(client, message):
 <b>❍ ʙʏ ➥ </b> {mention}</blockquote> 
 """
     buttons = InlineKeyboardMarkup([
-        [InlineKeyboardButton("❖ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɪᴄ ❖", url=f"https://t.me/{bot.me.username}?startgroup=true")],
+        [InlineKeyboardButton("❖ 𝖳𝖺𝗉 𝖳𝗈 𝖲𝖾𝖾 𝖬𝖺𝗀𝗂𝖼 ❖", url=f"https://t.me/{bot.me.username}?startgroup=true")],
         [
-            InlineKeyboardButton("🚀 𝗨𝗽𝗱𝗮𝘁𝗲", url="https://t.me/Team_Dns_Network"),
-            InlineKeyboardButton("💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url="https://t.me/dns_support_group")
+            InlineKeyboardButton("🚀 𝖴𝗉𝖽𝖺𝗍𝖾", url="https://t.me/Team_Dns_Network"),
+            InlineKeyboardButton("💬 𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url="https://t.me/dns_support_group")
         ],
-        [InlineKeyboardButton("〆 ᴄʟᴏsᴇ 〆", callback_data="force_close")]
+        [InlineKeyboardButton("𝖢𝖺𝗇𝖼𝖾𝗅", callback_data="force_close")]
     ])
     try:
         await message.reply_photo(photo=thumbnail, caption=caption, has_spoiler=False, reply_markup=buttons, parse_mode=enums.ParseMode.HTML)
