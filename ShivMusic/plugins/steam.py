@@ -157,7 +157,7 @@ async def start_stream_in_vc(client, message):
         title = full_title[:25]
         duration_mins = format_duration(duration_sec)
         views = "None"
-        image_path = "ERAVIBES/resource/thumbnail.png"
+        image_path = console.START_IMAGE_URL
         channellink = (
             f"https://t.me/{message.chat.username}"
             if message.chat.username
