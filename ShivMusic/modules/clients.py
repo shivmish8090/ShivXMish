@@ -426,12 +426,12 @@ class Call(PyTgCalls):
         duration = queued[0].get("duration")
         mention = queued[0].get("requested_by")
         buttons = InlineKeyboardMarkup([
-            [InlineKeyboardButton("❖ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɪᴄ ❖", url=f"https://t.me/{bot.me.username}?startgroup=true")],
+            [InlineKeyboardButton("❖ 𝖳𝖺𝗉 𝖳𝗈 𝖲𝖾𝖾 𝖬𝖺𝗀𝗂𝖼 ❖", url=f"https://t.me/{bot.me.username}?startgroup=true")],
             [
-                InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/net_pro_max"),
-                InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/+ifTJa6EmP4A1MTA9")
+            InlineKeyboardButton("🚀 𝖴𝗉𝖽𝖺𝗍𝖾", url="https://t.me/Team_Dns_Network"),
+            InlineKeyboardButton("💬 𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url="https://t.me/dns_support_group")
             ],
-            [InlineKeyboardButton("〆 ᴄʟᴏsᴇ 〆", callback_data="force_close")]
+            [InlineKeyboardButton("𝖢𝖺𝗇𝖼𝖾𝗅", callback_data="force_close")]
         ])
         caption = f"""
 <blockquote><b>✅ 𝐒ᴛᴀʀᴛᴇᴅ 𝐒ᴛʀᴇᴀᴍɪɴɢ</b></blockquote>
