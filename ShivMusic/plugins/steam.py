@@ -1,10 +1,9 @@
 import aiofiles, aiohttp, base64, json, os, random, re, requests, asyncio
 
 from .. import app, bot, call, cdz, console
+from .thumbnail import create_thumbnail
 from urllib.parse import urlparse
 from io import BytesIO
-
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -100,10 +99,6 @@ def seconds_to_hhmmss(seconds):
         sec = seconds % 60
         return f"{hours:d}:{minutes:02}:{sec:02}"
 
-
-
-async def make_thumbnail(image, title, channel, duration, output):
-    return await create_music_thumbnail(image, title, channel, duration, output)
 
 
 @bot.on_message(cdz(["play", "vplay"]) & ~filters.private)
@@ -235,15 +230,29 @@ Stream Audio Or Video❗...
             except Exception:
                 return
 
-    image_file = await generate_thumbnail(image_path)
-    thumbnail = await make_thumbnail(
-        image_file,
-        full_title,
-        channel,
-        duration_sec,
-        f"cache/{chat_id}_{id}_{message.id}.png",
-    )
-
+    if 'duration' in locals():
+        duration_str = duration
+    else:
+        minutes = duration_sec // 60
+        seconds = duration_sec % 60
+        if minutes >= 60:
+            hours = minutes // 60
+            minutes = minutes % 60
+            duration_str = f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+        else:
+            duration_str = f"{minutes:02d}:{seconds:02d}"
+    
+    results = {
+        "title": full_title,
+        "id": id,
+        "duration": duration_str,
+        "views": views if views != "None" else "N/A",
+        "channel": channel
+    }
+    
+    user_id = message.from_user.id if message.from_user else bot.id
+    thumbnail = await create_thumbnail(results["id"])
+    
     try:
         await aux.delete()
     except Exception:
