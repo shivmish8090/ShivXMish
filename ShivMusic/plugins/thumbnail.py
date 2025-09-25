@@ -16,10 +16,10 @@ import aiofiles
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 from youtubesearchpython.__future__ import VideosSearch
 
-title_font = ImageFont.truetype("assets/font3.ttf", 35)
-channel_font = ImageFont.truetype("assets/font2.ttf", 25)
-duration_font = ImageFont.truetype("assets/font.ttf", 23)
-watermark_font = ImageFont.truetype("assets/font.ttf", 20)
+title_font = ImageFont.truetype("ShivMusic/resource/thumb/font3.ttf", 35)
+channel_font = ImageFont.truetype("ShivMusic/resource/thumb/font2.ttf", 25)
+duration_font = ImageFont.truetype("ShivMusic/resource/thumb/font.ttf", 23)
+watermark_font = ImageFont.truetype("ShivMusic/resource/thumb/font.ttf", 20)
 
 async def generate_simple_thumb(videoid, filename):
     if os.path.isfile(filename):
@@ -52,7 +52,7 @@ async def generate_simple_thumb(videoid, filename):
         cx = (1280 - rect_width) // 2
         cy = (720 - rect_height) // 2
 
-        control_img = Image.open("assets/cntrol.png").convert("RGBA").resize((rect_width, rect_height))
+        control_img = Image.open("ShivMusic/resource/thumb/cntrol.png").convert("RGBA").resize((rect_width, rect_height))
         background.paste(control_img, (cx, cy), control_img)
 
         song_thumb = Image.open(f"cache/thumb_{videoid}.jpg").convert("RGBA").resize((180, 150))
