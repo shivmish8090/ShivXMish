@@ -89,8 +89,5 @@ async def generate_simple_thumb(videoid, filename):
         print(f"Error loading images: {e}")
         return None
 
-async def gen_qthumb(videoid):
-    return await generate_simple_thumb(videoid, f"cache/{videoid}_qv4.png")
-
-async def gen_thumb(videoid):
+async def create_thumbnail(videoid):
     return await generate_simple_thumb(videoid, f"cache/{videoid}_v4.png")
