@@ -425,28 +425,25 @@ class Call(PyTgCalls):
         title = queued[0].get("title")
         duration = queued[0].get("duration")
         mention = queued[0].get("requested_by")
-        buttons = InlineKeyboardMarkup(
+        buttons = InlineKeyboardMarkup([
+            [InlineKeyboardButton("❖ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɪᴄ ❖", url=f"https://t.me/{bot.me.username}?startgroup=true")],
             [
-                [
-                    InlineKeyboardButton(
-                        text="🗑️ Close", callback_data="close"
-                    )
-                ],
-            ]
-        )
+                InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/net_pro_max"),
+                InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/+ifTJa6EmP4A1MTA9")
+            ],
+            [InlineKeyboardButton("〆 ᴄʟᴏsᴇ 〆", callback_data="force_close")]
+        ])
         caption = f"""
-✅ **Started Streaming On VC.**
-
-**❍ Title:** [{title}...](https://t.me/{bot.me.username})
-**❍ Duration:** {duration}
-**❍ Requested By:** {mention}"""
+<blockquote><b>✅ 𝐒ᴛᴀʀᴛᴇᴅ 𝐒ᴛʀᴇᴀᴍɪɴɢ</b></blockquote>
+<blockquote><b>❍ Tɪᴛʟᴇ ➥ </b> <a href=https://t.me/{bot.me.username}>{title}</a>
+<b>❍ Dᴜʀᴀᴛɪᴏɴ ➥ </b> {duration_mins}
+<b>❍ ʙʏ ➥ </b> {mention}</blockquote> 
+"""
         try:
             await aux.delete()
         except Exception:
             pass
-        await bot.send_photo(chat_id, photo=thumbnail, caption=caption, has_spoiler=True, reply_markup=buttons)
-    
-
+        await bot.send_photo(chat_id, photo=thumbnail, caption=caption, has_spoiler=False, reply_markup=buttons, parse_mode=enums.ParseMode.HTML)
 
 
     
