@@ -323,8 +323,8 @@ async def start_stream_in_vc(client, message):
     buttons = InlineKeyboardMarkup([
         [InlineKeyboardButton("❖ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɪᴄ ❖", url=f"https://t.me/{bot.me.username}?startgroup=true")],
         [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/net_pro_max"),
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/+ifTJa6EmP4A1MTA9")
+            InlineKeyboardButton("🚀 𝗨𝗽𝗱𝗮𝘁𝗲", url="https://t.me/Team_Dns_Network"),
+            InlineKeyboardButton("💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url="https://t.me/dns_support_group")
         ],
         [InlineKeyboardButton("〆 ᴄʟᴏsᴇ 〆", callback_data="force_close")]
     ])
