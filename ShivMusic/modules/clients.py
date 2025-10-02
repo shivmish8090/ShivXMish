@@ -436,7 +436,7 @@ class Call(PyTgCalls):
         caption = f"""
 <blockquote><b>✅ 𝐒ᴛᴀʀᴛᴇᴅ 𝐒ᴛʀᴇᴀᴍɪɴɢ</b></blockquote>
 <blockquote><b>❍ Tɪᴛʟᴇ ➥ </b> <a href=https://t.me/{bot.me.username}>{title}</a>
-<b>❍ Dᴜʀᴀᴛɪᴏɴ ➥ </b> {duration_mins}
+<b>❍ Dᴜʀᴀᴛɪᴏɴ ➥ </b> {duration}
 <b>❍ ʙʏ ➥ </b> {mention}</blockquote> 
 """
         try:
