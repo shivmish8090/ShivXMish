@@ -35,8 +35,7 @@ chat_links = {}
 sudoers = filters.user()
 
 
-if os.path.exists("Config.env"):
-    load_dotenv("Config.env")
+load_dotenv()
 
 try:
     API_ID = int(getenv("API_ID", 0))
